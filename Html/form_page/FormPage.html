@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Страница с формой</title>
+</head>
+<body>
+<h1>Поделитесь своими данными со всем миром!</h1>
+<hr>
+<form action="/example.php" method="post">
+    <label>
+        Ваше имя <input type="text" name="clientName">
+    </label>
+    <br>
+    <label>
+        Ваш возраст <input type="text" name="clientAge">
+    </label>
+    <br>
+    <label>
+        Расскажите о себе <textarea rows="5" cols="50" name="clientStory"> </textarea>
+    </label>
+
+    <p>Укажите ваш пол</p>
+    <label>
+        <input type="radio" value="1" name="sex"> Мужской
+    </label>
+    <label>
+        <input type="radio" value="2" name="sex"> Женский
+    </label>
+
+    <p>Какой(-ие) цвет(-а) вы любите?</p>
+    <label>
+        <input type="checkbox" name="color" value="1"> Красный
+    </label>
+    <label>
+        <input type="checkbox" name="color" value="2"> Зеленый
+    </label>
+    <label>
+        <input type="checkbox" name="color" value="3"> Синий
+    </label>
+
+    <p>Выберите в списке слова, которые вам по душе</p>
+    <select size="3" multiple="multiple" name="bestWords">
+        <option value="Пёстрый">Пёстрый</option>
+        <option value="Гиперболойд">Гиперболойд</option>
+        <option value="Шаурма">Шаурма</option>
+    </select>
+
+    <p>Вам нравится сайт?</p>
+    <select size="2" name="isGoodPage">
+        <option value="1">Да</option>
+        <option value="2">Нет</option>
+    </select>
+
+    <button type="submit">Отправить</button>
+</form>
+
+<a href="http://localhost:63342/WebCourse/Html/table_page/TablePage.html?_ijt=l73g8gu8arokc094ce9hilokhs&_ij_reload=RELOAD_ON_SAVE">Ссылка
+    на страницу с таблицей</a>
+</body>
+</html>
