@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="507f7a9a-17e5-414a-96c7-b654d6d2521d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Html/form_page/FormPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Html/table_page/TablePage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Html/table_page/images/image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebCourse.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Html/form_page/FormPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Html/form_page/FormPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Html/table_page/TablePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Html/table_page/TablePage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,13 +30,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\J.A.R.V.I.S\IdeaProjects\WebCourse\Html" />
@@ -56,6 +51,29 @@
       <option name="presentableId" value="Default" />
       <updated>1699519976751</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added new HTML tasks">
+      <created>1699642970819</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699642970819</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added new HTML tasks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new HTML tasks" />
   </component>
 </project>
