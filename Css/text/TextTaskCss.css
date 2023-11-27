@@ -1,0 +1,43 @@
+.background-color {
+    max-width: 747px;
+    min-height: 415px;
+    background-color: #FEEED5;
+    font-family: Arial, serif;
+    color: #7A726B;
+    padding-top: 11px;
+}
+
+.main-unit {
+    margin-left: 14px;
+}
+
+.header {
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 1.1;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    margin-top: 13px;
+}
+
+.subtitle-color {
+    color: #4C87A1;
+    font-weight: bold;
+}
+
+.crossed-out-text {
+    text-decoration: line-through;
+}
+
+.unit-description {
+    font-size: 15px;
+    text-align: justify;
+    text-indent: 16px;
+    line-height: 1.49;
+    margin-top: 9px;
+    margin-right: 13px;
+    letter-spacing: 0.01em;
+}
