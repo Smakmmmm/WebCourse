@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="507f7a9a-17e5-414a-96c7-b654d6d2521d" name="Changes" comment="Added new TextCss task.">
-      <change beforePath="$PROJECT_DIR$/Html/table_page/TablePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Html/table_page/TablePage.html" afterDir="false" />
+    <list default="true" id="507f7a9a-17e5-414a-96c7-b654d6d2521d" name="Changes" comment="Corrected text in the TablePage task.">
+      <change afterPath="$PROJECT_DIR$/Css/table/Table.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css/table/TableTaskCss.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +68,9 @@
       <updated>1699519976751</updated>
       <workItem from="1700848286925" duration="172000" />
       <workItem from="1700848464817" duration="4056000" />
-      <workItem from="1701091471440" duration="11687000" />
+      <workItem from="1701091471440" duration="11892000" />
+      <workItem from="1701189291348" duration="8086000" />
+      <workItem from="1701338523167" duration="10486000" />
     </task>
     <task id="LOCAL-00001" summary="Added new HTML tasks">
       <created>1699642970819</created>
@@ -91,7 +95,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701103834893</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Corrected text in the TablePage task.">
+      <option name="closed" value="true" />
+      <created>1701104113947</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701104113947</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,7 +124,8 @@
     <MESSAGE value="Added new HTML tasks" />
     <MESSAGE value="Corrected head tags" />
     <MESSAGE value="Added new TextCss task." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new TextCss task." />
+    <MESSAGE value="Corrected text in the TablePage task." />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrected text in the TablePage task." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
