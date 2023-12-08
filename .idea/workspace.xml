@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="507f7a9a-17e5-414a-96c7-b654d6d2521d" name="Changes" comment="Added new Table task.">
-      <change afterPath="$PROJECT_DIR$/Css/form/Form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Css/form/FormTaskCss.css" afterDir="false" />
+    <list default="true" id="507f7a9a-17e5-414a-96c7-b654d6d2521d" name="Changes" comment="Added new Form task.">
+      <change afterPath="$PROJECT_DIR$/Js/lesson1/WorkingWithArrays.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Js/lesson1/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +17,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -71,7 +72,8 @@
       <workItem from="1701091471440" duration="11892000" />
       <workItem from="1701189291348" duration="8086000" />
       <workItem from="1701338523167" duration="17707000" />
-      <workItem from="1701446388447" duration="8086000" />
+      <workItem from="1701446388447" duration="8300000" />
+      <workItem from="1702051987853" duration="6310000" />
     </task>
     <task id="LOCAL-00001" summary="Added new HTML tasks">
       <created>1699642970819</created>
@@ -112,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701355557110</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added new Form task.">
+      <option name="closed" value="true" />
+      <created>1701454648618</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1701454648618</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,7 +145,8 @@
     <MESSAGE value="Added new TextCss task." />
     <MESSAGE value="Corrected text in the TablePage task." />
     <MESSAGE value="Added new Table task." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new Table task." />
+    <MESSAGE value="Added new Form task." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new Form task." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
