@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="507f7a9a-17e5-414a-96c7-b654d6d2521d" name="Changes" comment="Added new js WorkingWithArrays task.">
-      <change afterPath="$PROJECT_DIR$/Js/lesson1/WorkingWithObjects.js" afterDir="false" />
+    <list default="true" id="507f7a9a-17e5-414a-96c7-b654d6d2521d" name="Changes" comment="Added new Form task.">
+      <change afterPath="$PROJECT_DIR$/Js/temperature_conversion/Index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Js/temperature_conversion/TemperatureConverter.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Js/temperature_conversion/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Js/temperature_conversion/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Js/lesson1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Js/lesson1/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -38,23 +40,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/J.A.R.V.I.S/IdeaProjects/WebCourse2/Js/temperature_conversion",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\J.A.R.V.I.S\IdeaProjects\WebCourse2\Js\temperature_conversion" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\J.A.R.V.I.S\IdeaProjects\WebCourse\Html" />
     </key>
@@ -73,9 +81,8 @@
       <workItem from="1701189291348" duration="8086000" />
       <workItem from="1701338523167" duration="17707000" />
       <workItem from="1701446388447" duration="8300000" />
-      <workItem from="1702051987853" duration="6650000" />
-      <workItem from="1702141349381" duration="1628000" />
-      <workItem from="1704190498787" duration="178000" />
+      <workItem from="1702051987853" duration="6310000" />
+      <workItem from="1706102906008" duration="14774000" />
     </task>
     <task id="LOCAL-00001" summary="Added new HTML tasks">
       <created>1699642970819</created>
@@ -124,15 +131,7 @@
       <option name="project" value="LOCAL" />
       <updated>1701454648618</updated>
     </task>
-    <task id="LOCAL-00007" summary="Added new js WorkingWithArrays task.">
-      <option name="closed" value="true" />
-      <created>1702059400555</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1702059400555</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,8 +155,7 @@
     <MESSAGE value="Corrected text in the TablePage task." />
     <MESSAGE value="Added new Table task." />
     <MESSAGE value="Added new Form task." />
-    <MESSAGE value="Added new js WorkingWithArrays task." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new js WorkingWithArrays task." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new Form task." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
