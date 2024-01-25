@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="507f7a9a-17e5-414a-96c7-b654d6d2521d" name="Changes" comment="Added new Form task.">
-      <change afterPath="$PROJECT_DIR$/Js/temperature_conversion/Index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Js/temperature_conversion/TemperatureConverter.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Js/temperature_conversion/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Js/temperature_conversion/script.js" afterDir="false" />
+    <list default="true" id="507f7a9a-17e5-414a-96c7-b654d6d2521d" name="Changes" comment="Added new TemperatureConversion task.">
+      <change afterPath="$PROJECT_DIR$/Js/todo_list/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Js/todo_list/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Js/todo_list/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Js/todo_list/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -48,7 +48,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/J.A.R.V.I.S/IdeaProjects/WebCourse2/Js/temperature_conversion",
+    "last_opened_file_path": "C:/Users/J.A.R.V.I.S/IdeaProjects/WebCourse2/Js/todo_list",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -61,6 +61,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\J.A.R.V.I.S\IdeaProjects\WebCourse2\Js\todo_list" />
       <recent name="C:\Users\J.A.R.V.I.S\IdeaProjects\WebCourse2\Js\temperature_conversion" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -82,7 +83,8 @@
       <workItem from="1701338523167" duration="17707000" />
       <workItem from="1701446388447" duration="8300000" />
       <workItem from="1702051987853" duration="6310000" />
-      <workItem from="1706102906008" duration="14774000" />
+      <workItem from="1706102906008" duration="15446000" />
+      <workItem from="1706175457376" duration="15071000" />
     </task>
     <task id="LOCAL-00001" summary="Added new HTML tasks">
       <created>1699642970819</created>
@@ -131,7 +133,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701454648618</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added new TemperatureConversion task.">
+      <option name="closed" value="true" />
+      <created>1706121605465</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1706121605465</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,7 +165,8 @@
     <MESSAGE value="Corrected text in the TablePage task." />
     <MESSAGE value="Added new Table task." />
     <MESSAGE value="Added new Form task." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new Form task." />
+    <MESSAGE value="Added new TemperatureConversion task." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new TemperatureConversion task." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
