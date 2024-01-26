@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="507f7a9a-17e5-414a-96c7-b654d6d2521d" name="Changes" comment="Added new TemperatureConversion task.">
-      <change afterPath="$PROJECT_DIR$/Js/todo_list/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Js/todo_list/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Js/todo_list/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Js/todo_list/style.css" afterDir="false" />
+    <list default="true" id="507f7a9a-17e5-414a-96c7-b654d6d2521d" name="Changes" comment="Added new TODOList(DOM) task.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Js/todo_list/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Js/todo_list/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,25 +37,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/J.A.R.V.I.S/IdeaProjects/WebCourse2/Js/todo_list",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/J.A.R.V.I.S/IdeaProjects/WebCourse2/Js/todo_list&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\J.A.R.V.I.S\IdeaProjects\WebCourse2\Js\todo_list" />
@@ -84,7 +81,8 @@
       <workItem from="1701446388447" duration="8300000" />
       <workItem from="1702051987853" duration="6310000" />
       <workItem from="1706102906008" duration="15446000" />
-      <workItem from="1706175457376" duration="15071000" />
+      <workItem from="1706175457376" duration="15951000" />
+      <workItem from="1706258477814" duration="660000" />
     </task>
     <task id="LOCAL-00001" summary="Added new HTML tasks">
       <created>1699642970819</created>
@@ -141,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706121605465</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added new TODOList(DOM) task.">
+      <option name="closed" value="true" />
+      <created>1706203741214</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1706203741214</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,7 +172,8 @@
     <MESSAGE value="Added new Table task." />
     <MESSAGE value="Added new Form task." />
     <MESSAGE value="Added new TemperatureConversion task." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new TemperatureConversion task." />
+    <MESSAGE value="Added new TODOList(DOM) task." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new TODOList(DOM) task." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

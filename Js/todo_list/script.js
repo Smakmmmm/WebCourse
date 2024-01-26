@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         editTextField.classList.add("invalid");
                         return;
                     }
-                    //TODO Добавить сообщение, если поле пустое.
+
                     newTodoText = changedTodoText;
                     setViewMode();
                 });
