@@ -1,0 +1,67 @@
+.add-todo-page .add-todo-form > * {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 18px;
+}
+
+.add-todo-page .error-message {
+    color: #f00;
+    display: none;
+}
+
+.add-todo-page .invalid {
+    border-color: #f00;
+}
+
+.add-todo-page .invalid + .error-message {
+    display: block;
+}
+
+.add-todo-page .todo-list {
+    padding-left: 0;
+    overflow-wrap: break-word;
+}
+
+.add-todo-page .add-button {
+    margin-left: 5px;
+}
+
+.add-todo-page .delete-button {
+    margin-left: 5px;
+}
+
+.add-todo-page .edit-button {
+    margin-left: 5px;
+}
+
+.add-todo-page .todo-item + .todo-item {
+    margin-top: 10px;
+}
+
+.add-todo-page .text-field-with-message {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.add-todo-page {
+    margin-left: 10px;
+    padding-bottom: 10px;
+    background-color: #FFF5EB;
+    width: 800px;
+}
+
+.add-todo-page .add-todo-form {
+    margin-bottom: 10px;
+}
+
+.add-todo-page .explanatory-text-for-note {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.add-todo-page .header {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
