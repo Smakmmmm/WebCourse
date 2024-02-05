@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Phone Book</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="libs/jquery-ui-1.13.2/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="libs/jquery-3.7.1.js"></script>
+    <script defer src="libs/jquery-ui-1.13.2/jquery-ui.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+<div class="phone-book-page">
+    <h1 class="header">Телефонная книга</h1>
+
+    <form class="add-phone-form" id="add-phone-form">
+        <label for="new-surname-text-field">Введите фамилию</label>
+        <div>
+            <input id="new-surname-text-field" type="text">
+            <div class="error-message">Необходимо указать фамилию</div>
+        </div>
+
+        <label for="new-name-text-field">Введите имя</label>
+        <div>
+            <input id="new-name-text-field" type="text">
+            <div class="error-message">Необходимо указать имя</div>
+        </div>
+
+        <label for="new-phone-number-field">Введите номер</label>
+        <div>
+            <input id="new-phone-number-field" type="number">
+            <div class="error-message">Необходимо указать номер</div>
+        </div>
+
+        <button>Добавить</button>
+    </form>
+
+    <table class="phone-table">
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>Фамилия</th>
+                <th>Имя</th>
+                <th>Номер телефона</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="phone-numbers-table">
+
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

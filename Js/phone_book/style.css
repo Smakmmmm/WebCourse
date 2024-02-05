@@ -1,0 +1,55 @@
+.phone-book-page {
+    font-family: Calibri, serif;
+    font-size: 20px;
+    background-color: #FFF5EB;
+    padding-bottom: 5px;
+}
+
+.phone-book-page .add-phone-form {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.phone-book-page .add-phone-form div {
+    margin: 10px 0;
+}
+
+.phone-book-page .add-phone-form button {
+    margin: 0 60px 10px;
+    font-size: 16px;
+}
+
+.phone-book-page .header {
+    font-size: 27px;
+    margin: 0 100px 20px 100px;
+    padding-top: 10px;
+}
+
+.phone-book-page .error-message {
+    color: #f00;
+    display: none;
+}
+
+.phone-book-page .invalid {
+    border-color: #f00;
+}
+
+.phone-book-page .invalid + .error-message {
+    display: block;
+}
+
+.phone-book-page .phone-table {
+    margin: 0 10px 10px;
+    border-collapse: collapse;
+    border: 1px solid #000000;
+    text-align: center;
+}
+
+.phone-book-page .phone-table td, th {
+    border: 1px solid #000000;
+    padding: 3px 10px;
+}
+
+.phone-book-page .phone-table th {
+    font-weight: bold;
+}
