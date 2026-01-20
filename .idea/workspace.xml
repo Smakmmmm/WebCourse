@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="507f7a9a-17e5-414a-96c7-b654d6d2521d" name="Changes" comment="Edited TODOList(Vue) tasks. (js + html)">
-      <change afterPath="$PROJECT_DIR$/Js/todo_list_vue_2/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Js/todo_list_vue_2/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Js/todo_list_vue_2/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebCourse.iml" beforeDir="false" afterPath="$PROJECT_DIR$/WebCourse.iml" afterDir="false" />
-    </list>
+    <list default="true" id="507f7a9a-17e5-414a-96c7-b654d6d2521d" name="Changes" comment="Added new variant of todo list vue (2)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -127,7 +121,7 @@
       <workItem from="1768537115971" duration="5671000" />
       <workItem from="1768805493734" duration="5462000" />
       <workItem from="1768815881900" duration="3802000" />
-      <workItem from="1768889817169" duration="5864000" />
+      <workItem from="1768889817169" duration="5907000" />
     </task>
     <task id="LOCAL-00001" summary="Added new HTML tasks">
       <created>1699642970819</created>
@@ -224,7 +218,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768820037157</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added new variant of todo list vue (2)">
+      <option name="closed" value="true" />
+      <created>1768898073748</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1768898073748</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,7 +254,8 @@
     <MESSAGE value="Added new TODOList(DOM) task." />
     <MESSAGE value="Added new TODOList(Vue) $ PhoneBook(Vue) tasks." />
     <MESSAGE value="Edited TODOList(Vue) tasks. (js + html)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edited TODOList(Vue) tasks. (js + html)" />
+    <MESSAGE value="Added new variant of todo list vue (2)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new variant of todo list vue (2)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
