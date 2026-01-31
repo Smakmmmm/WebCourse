@@ -12,7 +12,17 @@ Vue.createApp({})
 
         methods: {
             addPhoneBookRaw() {
+                const newPhoneNumberItem = {
+                    name: this.name,
+                    surname: this.surname,
+                    phoneNumber: this.phoneNumber
+                };
 
+                this.items.push(newPhoneNumberItem);
+
+                this.name = "";
+                this.surname = "";
+                this.phoneNumber = "";
             }
         },
 
@@ -41,6 +51,41 @@ Vue.createApp({})
         `
     })
     .component("PhoneBookItem", {
+        props: {
+            item: {
+                type: Object,
+                required: true
+            }
+        },
 
+        data() {
+            return {
+                isEditing: false,
+                editingName: this.item.name.text,
+                editingSurname: this.item.surname.text,
+                editingPhoneNumber: this.item.phoneNumber.text
+            };
+        },
+
+        methods: {
+
+        },
+
+        template: `
+          <li>
+            <div v-if="!isEditing">
+              <span v-model="item.name.text"></span>
+              <span v-model="item.surname.text"></span>
+              <span v-model="item.phoneNumber.text"></span>
+              <div>
+                <button>Save</button>
+                <button>Cancel</button>
+              </div>
+            </div>
+            <div v-else>
+              
+            </div>
+          </li>
+        `
     })
     .mount("#app");
