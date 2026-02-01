@@ -43,9 +43,10 @@ Vue.createApp({})
           </form>
 
           <ul class="list-unstyled">
-            <phone-book-item v-for="item in items"
+            <phone-book-item v-for="(item, index) in items"
                              :key="item.id"
                              :item="item"
+                             :number="index + 1"
             ></phone-book-item>
           </ul>
         `
@@ -55,7 +56,9 @@ Vue.createApp({})
             item: {
                 type: Object,
                 required: true
-            }
+            },
+
+            number: Number
         },
 
         data() {
@@ -67,23 +70,22 @@ Vue.createApp({})
             };
         },
 
-        methods: {
-
-        },
+        methods: {},
 
         template: `
-          <li>
-            <div v-if="!isEditing">
-              <span v-model="item.name.text"></span>
-              <span v-model="item.surname.text"></span>
-              <span v-model="item.phoneNumber.text"></span>
-              <div>
-                <button>Save</button>
-                <button>Cancel</button>
+          <li class="mb-2">
+            <div class="row" v-if="!isEditing">
+              <span class="col" v-text="number"></span>
+              <span class="col" v-text="item.name"></span>
+              <span class="col" v-text="item.surname"></span>
+              <span class="col" v-text="item.phoneNumber"></span>
+              <div class="col-auto">
+                <button class="btn btn-primary me-2">Save</button>
+                <button class="btn btn-danger">Cancel</button>
               </div>
             </div>
             <div v-else>
-              
+
             </div>
           </li>
         `
