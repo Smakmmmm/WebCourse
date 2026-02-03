@@ -6,12 +6,21 @@ Vue.createApp({})
                 surname: "",
                 phoneNumber: "",
 
-                items: []
+                items: [],
+
+                validated: false
             };
         },
 
         methods: {
-            addPhoneBookRow() {
+            addPhoneBookRow(event) {
+                const form = event.target;
+                this.validated = true;
+
+                if (form.checkValidity() === false) {
+                    return;
+                }
+
                 const newPhoneNumberItem = {
                     id: Date.now(),
                     name: this.name,
@@ -24,6 +33,8 @@ Vue.createApp({})
                 this.name = "";
                 this.surname = "";
                 this.phoneNumber = "";
+
+                this.validated = false;
             },
 
             deletePhoneBookRow(item) {
@@ -38,16 +49,21 @@ Vue.createApp({})
         },
 
         template: `
-          <form @submit.prevent="addPhoneBookRow" class="row">
-            <label class="col">
-              <input v-model="name" class="form-control" type="text" placeholder="Name">
-            </label>
-            <label class="col">
-              <input v-model="surname" class="form-control" type="text" placeholder="Surname">
-            </label>
-            <label class="col">
-              <input v-model="phoneNumber" class="form-control" type="number" placeholder="Phone number">
-            </label>
+          <form @submit.prevent="addPhoneBookRow"
+                class="row needs-validation" novalidate
+                :class="{'was-validated' : validated}">
+            <div class="col">
+              <input v-model="name" class="form-control" type="text" placeholder="Name" required>
+              <div class="invalid-feedback">Please, dill the name field</div>
+            </div>
+            <div class="col">
+              <input v-model="surname" class="form-control" type="text" placeholder="Surname" required>
+              <div class="invalid-feedback">Please, dill the surname field</div>
+            </div>
+            <div class="col">
+              <input v-model="phoneNumber" class="form-control" type="number" placeholder="Phone number" required>
+              <div class="invalid-feedback">Please, dill the phone number field</div>
+            </div>
             <div class="col-auto">
               <button class="btn btn-primary">Add</button>
             </div>
@@ -81,12 +97,26 @@ Vue.createApp({})
                 isEditing: false,
                 editingName: this.item.name,
                 editingSurname: this.item.surname,
-                editingPhoneNumber: this.item.phoneNumber
+                editingPhoneNumber: this.item.phoneNumber,
+
+                validated: false
             };
         },
 
         methods: {
+            isItemValid() {
+                return this.editingName.trim() !== "" &&
+                    this.editingSurname.trim() !== "" &&
+                    String(this.editingPhoneNumber).trim() !== "";
+            },
+
             save() {
+                this.validated = true;
+
+                if (!this.isItemValid()) {
+                    return;
+                }
+
                 this.isEditing = false;
 
                 this.$emit("save-item",
@@ -96,6 +126,8 @@ Vue.createApp({})
                         surname: this.editingSurname,
                         phoneNumber: this.editingPhoneNumber
                     });
+
+                this.validated = false;
             },
 
             cancel() {
@@ -118,17 +150,18 @@ Vue.createApp({})
                 <button @click="$emit('delete-item')" class="btn btn-danger">Delete</button>
               </div>
             </div>
-            <div v-else class="row">
+            <div v-else class="row" :class="{'was-validated' : validated}">
               <span class="col-1" v-text="number"></span>
-              <label class="col">
-                <input v-model="editingName" class="form-control" type="text" placeholder="Name">
-              </label>
-              <label class="col">
-                <input v-model="editingSurname" class="form-control" type="text" placeholder="Surname">
-              </label>
-              <label class="col">
-                <input v-model="editingPhoneNumber" class="form-control" type="number" placeholder="Phone number">
-              </label>
+              <div class="col">
+                <input v-model="editingName" class="form-control" type="text" placeholder="Name" required>
+              </div>
+              <div class="col">
+                <input v-model="editingSurname" class="form-control" type="text" placeholder="Surname" required>
+              </div>
+              <div class="col">
+                <input v-model="editingPhoneNumber" class="form-control" type="number" placeholder="Phone number"
+                       required>
+              </div>
               <div class="col-auto">
                 <button @click="save" class="btn btn-primary">Save</button>
                 <button @click="cancel" class="btn btn-danger">Cancel</button>
