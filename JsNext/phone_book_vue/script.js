@@ -13,6 +13,7 @@ Vue.createApp({})
         methods: {
             addPhoneBookRow() {
                 const newPhoneNumberItem = {
+                    id: Date.now(),
                     name: this.name,
                     surname: this.surname,
                     phoneNumber: this.phoneNumber
@@ -29,10 +30,10 @@ Vue.createApp({})
                 this.items = this.items.filter(x => x !== item);
             },
 
-            updateFields(editedItem) {
-                this.item.name.text = editedItem.name;
-                this.item.surname.text = editedItem.surname;
-                this.item.phoneNumber.text = editedItem.phoneNumber;
+            updateFields(event) {
+                event.targetItem.name = event.name;
+                event.targetItem.surname = event.surname;
+                event.targetItem.phoneNumber = event.phoneNumber;
             }
         },
 
@@ -56,6 +57,7 @@ Vue.createApp({})
             <phone-book-item v-for="(item, index) in items"
                              :key="item.id"
                              :item="item"
+                             :index="index"
                              :number="index + 1"
                              @delete-item="deletePhoneBookRow(item)"
                              @save-item="updateFields($event)"
@@ -70,6 +72,7 @@ Vue.createApp({})
                 required: true
             },
 
+            index: Number,
             number: Number
         },
 
@@ -88,14 +91,18 @@ Vue.createApp({})
 
                 this.$emit("save-item",
                     {
+                        targetItem: this.item,
                         name: this.editingName,
                         surname: this.editingSurname,
                         phoneNumber: this.editingPhoneNumber
-                    })
+                    });
             },
 
             cancel() {
-
+                this.isEditing = false;
+                this.editingName = this.item.name;
+                this.editingSurname = this.item.surname;
+                this.editingPhoneNumber = this.item.phoneNumber;
             }
         },
 
@@ -124,7 +131,7 @@ Vue.createApp({})
               </label>
               <div class="col-auto">
                 <button @click="save" class="btn btn-primary">Save</button>
-                <button class="btn btn-danger">Cancel</button>
+                <button @click="cancel" class="btn btn-danger">Cancel</button>
               </div>
             </div>
           </li>
