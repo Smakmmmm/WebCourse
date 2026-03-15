@@ -54,15 +54,15 @@ Vue.createApp({})
                 :class="{'was-validated' : validated}">
             <div class="col">
               <input v-model="name" class="form-control" type="text" placeholder="Name" required>
-              <div class="invalid-feedback">Please, dill the name field</div>
+              <div class="invalid-feedback">Please, fill the name field</div>
             </div>
             <div class="col">
               <input v-model="surname" class="form-control" type="text" placeholder="Surname" required>
-              <div class="invalid-feedback">Please, dill the surname field</div>
+              <div class="invalid-feedback">Please, fill the surname field</div>
             </div>
             <div class="col">
               <input v-model="phoneNumber" class="form-control" type="number" placeholder="Phone number" required>
-              <div class="invalid-feedback">Please, dill the phone number field</div>
+              <div class="invalid-feedback">Please, fill the phone number field</div>
             </div>
             <div class="col-auto">
               <button class="btn btn-primary">Add</button>
