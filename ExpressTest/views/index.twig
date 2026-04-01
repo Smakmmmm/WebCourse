@@ -2,15 +2,40 @@
 
 {% block body %}
   {% verbatim %}
-    <div class="container" id="app">
-        <h1>PhoneBook</h1>
+    <div class="container my-2" id="app">
+        <h1 class="mb-3">PhoneBook</h1>
 
-        <form>
+        <form @submit.prevent="createContact" class="mb-3">
+            <h2 class="h5">Add contact</h2>
 
+            <div class="row row-cols-lg-auto g-3 align-items-center">
+                <div class="col-12">
+                    <input v-model="name" type="text" class="form-control" placeholder="Name">
+                </div>
+                <div class="col-12">
+                    <input v-model="phone" type="text" class="form-control" placeholder="Phone">
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary">Create</button>
+                </div>
+            </div>
+        </form>
+
+        <form @submit.prevent="loadContacts" class="mb-3">
+            <h2 class="h5">Search contact</h2>
+
+            <div class="row row-cols-lg-auto g-3 align-items-center">
+                <div class="col-12">
+                    <input v-model="term" type="text" class="form-control" placeholder="Search text">
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary">Search</button>
+                </div>
+            </div>
         </form>
 
         <div class="table-responsive">
-          <table>
+          <table class="table table-striped">
             <thead>
                 <tr>
                     <th>№</th>
@@ -19,12 +44,15 @@
                     <th>Functions</th>
                 </tr>
             </thead>
-            <tbody v-cloak>
+            <tbody v-for="(contact, index) in contacts" :key="contact.id" v-cloak>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td v-text="index + 1"></td>
+                    <td v-text="contact.name"></td>
+                    <td v-text="contact.phone"></td>
+                    <td>
+                        <button class="btn btn-primary">Edit</button>
+                        <button @click="deleteContact(contact)" class="btn btn-danger">Delete</button>
+                    </td>
                 </tr>
             </tbody>
           </table>

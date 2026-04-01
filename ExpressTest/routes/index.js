@@ -21,7 +21,7 @@ router.get("/api/contacts", function(req, res) {
 });
 
 router.delete("/api/contacts/:id", function (req, res) {
-    const id = req.params.id;
+    const id = Number(req.params.id);
 
     contacts = contacts.filter(c => c.id !== id);
 
