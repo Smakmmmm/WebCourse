@@ -13,5 +13,6 @@
     <orderEntry type="library" name="@types/node" level="application" />
     <orderEntry type="library" name="vue" level="project" />
     <orderEntry type="library" name="axios.js" level="project" />
+    <orderEntry type="library" name="@types/axios-cancel" level="application" />
   </component>
 </module>

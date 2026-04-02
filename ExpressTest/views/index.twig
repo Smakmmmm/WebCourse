@@ -44,20 +44,37 @@
                     <th>Functions</th>
                 </tr>
             </thead>
-            <tbody v-for="(contact, index) in contacts" :key="contact.id" v-cloak>
-                <tr>
+            <tbody v-cloak>
+                <tr v-for="(contact, index) in contacts" :key="contact.id">
                     <td v-text="index + 1"></td>
                     <td v-text="contact.name"></td>
                     <td v-text="contact.phone"></td>
                     <td>
                         <button class="btn btn-primary">Edit</button>
-                        <button @click="deleteContact(contact)" class="btn btn-danger">Delete</button>
+                        <button @click="showDeleteContactConfirmModal(contact)" class="btn btn-danger">Delete</button>
                     </td>
                 </tr>
             </tbody>
           </table>
         </div>
 
+        <div ref="modal" class="modal fade" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5">Delete confirmation</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Do you really want to delete this contact?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button @click="deleteContact" type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
   {% endverbatim %}
 {% endblock %}
