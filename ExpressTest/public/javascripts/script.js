@@ -14,6 +14,10 @@ function executeDelete(url) {
     return axios.delete(url).then(response => response.data);
 }
 
+function executeEdit(url, data) {
+    return axios.put(url, data).then(response => response.data);
+}
+
 class PhoneBookService {
     constructor() {
         this.baseUrl = "/api/contacts";
@@ -29,6 +33,10 @@ class PhoneBookService {
 
     createContact(contact) {
         return executePost(this.baseUrl, contact);
+    }
+
+    editContact(id, contact) {
+        return executeEdit(`${this.baseUrl}/${id}`, contact);
     }
 }
 
@@ -88,12 +96,46 @@ Vue.createApp({
                 this.deleteConfirmDialog.hide();
                 this.loadContacts();
                 this.contactToDelete = null;
-            }).catch(() => alert("Couldn't delete contacts"));
+            }).catch(() => alert("Couldn't delete the contact"));
+        },
+
+        startEdit(contact) {
+            contact.isEditing = true;
+            contact.tempName = contact.name;
+            contact.tempPhone = contact.phone;
+        },
+
+        saveEdit(contact) {
+            if (!contact.tempName.trim() || !contact.tempPhone.trim()) {
+                alert("Name and phone fields couldn't be empty!");
+                return;
+            }
+
+            const updatedContact = {
+                name: contact.tempName,
+                phone: contact.tempPhone
+            }
+
+            this.service.editContact(contact.id, updatedContact).then(response => {
+                if (!response.success) {
+                    alert(response.message);
+                    return;
+                }
+
+                contact.name = contact.tempName;
+                contact.phone = contact.tempPhone;
+                contact.isEditing = false;
+            }).catch(() => alert("Couldn't edit the contact"));
         },
 
         loadContacts() {
             this.service.getContacts(this.term).then(contacts => {
-                this.contacts = contacts;
+                this.contacts = contacts.map(c => ({
+                    ...c,
+                    isEditing: false,
+                    tempName: c.name,
+                    tempPhone: c.phone
+                }));
             }).catch(() => alert("Couldn't load contacts"));
         }
     }

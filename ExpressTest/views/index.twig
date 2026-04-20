@@ -47,11 +47,25 @@
             <tbody v-cloak>
                 <tr v-for="(contact, index) in contacts" :key="contact.id">
                     <td v-text="index + 1"></td>
-                    <td v-text="contact.name"></td>
-                    <td v-text="contact.phone"></td>
                     <td>
-                        <button class="btn btn-primary">Edit</button>
-                        <button @click="showDeleteContactConfirmModal(contact)" class="btn btn-danger">Delete</button>
+                        <div v-if="!contact.isEditing" v-text="contact.name"></div>
+                        <input v-else v-model="contact.tempName" class="form-control" type="text">
+                    </td>
+
+                    <td>
+                        <div v-if="!contact.isEditing" v-text="contact.phone"></div>
+                        <input v-else v-model="contact.tempPhone" class="form-control" type="text">
+                    </td>
+
+                    <td>
+                        <div v-if="!contact.isEditing">
+                            <button @click="startEdit(contact)" class="btn btn-primary">Edit</button>
+                            <button @click="showDeleteContactConfirmModal(contact)" class="btn btn-danger">Delete</button>
+                        </div>
+                        <div v-else>
+                            <button @click="saveEdit(contact)" class="btn btn-primary">Save</button>
+                            <button @click="contact.isEditing = false" class="btn btn-danger">Cancel</button>
+                        </div>
                     </td>
                 </tr>
             </tbody>

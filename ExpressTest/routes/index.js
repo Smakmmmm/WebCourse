@@ -75,4 +75,31 @@ router.post("/api/contacts", function (req, res) {
     });
 });
 
+router.put("/api/contacts/:id", function (req, res) {
+    const updatedContactId = Number(req.params.id);
+    const updatedContact = req.body;
+
+    const contact = contacts.find(c => c.id === updatedContactId);
+
+    if (!contact) {
+        res.send({success: false, message: "Contact not found!"});
+        return;
+    }
+
+    if (!updatedContact.name || !updatedContact.phone) {
+        res.send({success: false, message: "Name and fond are required!"});
+        return;
+    }
+
+    if (contacts.some(c => c.phone === updatedContact.phone && c.id !== updatedContactId)) {
+        res.send({success: false, message: "Phone must be unique!"});
+        return;
+    }
+
+    contact.name = updatedContact.name;
+    contact.phone = updatedContact.phone;
+
+    res.send({success: true, message: null});
+});
+
 module.exports = router;
