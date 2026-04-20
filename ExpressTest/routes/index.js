@@ -91,7 +91,8 @@ router.put("/api/contacts/:id", function (req, res) {
         return;
     }
 
-    if (contacts.some(c => c.phone === updatedContact.phone && c.id !== updatedContactId)) {
+    if (contacts.some(c => c.phone.toUpperCase() === updatedContact.phone.toUpperCase() &&
+        c.id !== updatedContactId)) {
         res.send({success: false, message: "Phone must be unique!"});
         return;
     }
