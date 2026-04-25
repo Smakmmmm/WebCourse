@@ -38,7 +38,7 @@ router.post("/api/contacts", function (req, res) {
         phone: req.body.phone
     };
 
-    if (!contact.name) {
+    if (!contact.name.trim()) {
         res.send({
             success: false,
             message: "Field 'name' is required"
@@ -87,7 +87,7 @@ router.put("/api/contacts/:id", function (req, res) {
     }
 
     if (!updatedContact.name || !updatedContact.phone) {
-        res.send({success: false, message: "Name and fond are required!"});
+        res.send({success: false, message: "Name and phone are required!"});
         return;
     }
 

@@ -1,4 +1,7 @@
-/* global axios, Vue, bootstrap */
+/* global axios, bootstrap, Vue */
+
+import "bootstrap/dist/css/bootstrap.css";
+import "../stylesheets/style.css";
 
 function executeGet(url, data) {
     return axios.get(url, {
@@ -58,7 +61,7 @@ Vue.createApp({
     },
 
     mounted() {
-        this.deleteConfirmDialog = new bootstrap.Modal(this.$refs.modal, {});
+            this.deleteConfirmDialog = new bootstrap.Modal(this.$refs.modal);
     },
 
     methods: {
@@ -129,6 +132,7 @@ Vue.createApp({
         },
 
         loadContacts() {
+            /** @type {Array} */
             this.service.getContacts(this.term).then(contacts => {
                 this.contacts = contacts.map(c => ({
                     ...c,
