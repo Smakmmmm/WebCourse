@@ -1,7 +1,7 @@
 /* global axios, bootstrap, Vue */
 
 import "bootstrap/dist/css/bootstrap.css";
-import "../stylesheets/style.css";
+import "../stylesheets/style.scss";
 
 function executeGet(url, data) {
     return axios.get(url, {

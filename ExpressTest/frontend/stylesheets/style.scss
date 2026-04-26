@@ -1,0 +1,9 @@
+[v-cloak] {
+    display: none;
+}
+
+$back-ground-image: url("../images/background.jpg");
+
+body {
+    background-image: $back-ground-image;
+}
