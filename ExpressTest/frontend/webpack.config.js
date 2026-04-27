@@ -2,6 +2,8 @@ const path = require("path");
 
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const { VueLoaderPlugin } = require("vue-loader");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
     devtool: "source-map",
@@ -16,6 +18,19 @@ module.exports = {
         assetModuleFilename: "[path][name][ext]?[contenthash]"
     },
 
+    devServer: {
+        hot: true,
+        open: true,
+        proxy: [
+            {
+                context: ['/api'],
+                target: 'http://localhost:3000',
+                changeOrigin: true,
+                secure: false
+            }
+        ]
+    },
+
     module: {
         rules: [
             {
@@ -27,6 +42,10 @@ module.exports = {
                         presets: ["@babel/preset-env"]
                     }
                 }
+            },
+            {
+                test: /\.vue$/,
+                use: "vue-loader"
             },
             {
                 test: /\.scss$/,
@@ -51,6 +70,10 @@ module.exports = {
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: "styles.css"
+        }),
+        new VueLoaderPlugin(),
+        new HtmlWebpackPlugin({
+            template: "index.html"
         })
     ]
 };
